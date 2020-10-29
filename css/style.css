@@ -9,12 +9,13 @@ header{
 h1{
 	font-size: 3em; 
 	font-family: 'Crimson Text', serif;
-	color: black;
+	color: rgb(64, 128, 0);
 	animation-name: cool;
 	animation-duration: 10s;
 	animation-direction: alternate-reverse;
 	animation-iteration-count: infinite;
 }
+
 @keyframes cool{
 	from{color:black;}
 	to{color:rgb(64, 128, 0);}
@@ -318,9 +319,17 @@ legend{
 }
 
 @media screen and (prefers-reduced-motion: reduce) { 
-	#logo{
+	h1{
 	  animation:none;
 	  animation-duration: 0s;
 	}
 }
+
+
+@media screen and (prefers-reduced-motion) {
+	h1{
+		animation:none;
+		animation-duration: 0s;
+	  }
+ }
   
